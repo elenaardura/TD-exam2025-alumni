@@ -9,6 +9,9 @@ env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
   GKE_CLUSTER: ${{ secrets.GKE_CLUSTER }}
   IMAGE_NAME: gcr.io/${{ secrets.GCP_PROJECT_ID }}/exam2025
+  GKE_ZONE: ${{ secrets.GKE_ZONE }}
+  GCP_BUCKET_NAME: ${{ secrets.GCP_BUCKET_NAME }}
+  GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
   
 jobs:
   deploy:
